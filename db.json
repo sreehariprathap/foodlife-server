@@ -1,22 +1,1224 @@
 {
-    "feedback": [
-        {
-            "id": 1,
-            "rating": 10,
-            "user_name": "Tony Stark",
-            "text": "You are the ironman of this world"
-        },
-        {
-            "id": 2,
-            "rating": 9,
-            "user_name": "Bruce Wayne",
-            "text": "You are the batman of this world"
-        },
-        {
-            "id": 3,
-            "rating": 8,
-            "user_name": "Peter Parker",
-            "text": "You are the spiderman of this world"
-        }
+    "users": [
+      {
+        "id": 1,
+        "username": "duncan",
+        "country": "australia",
+        "password": "123"
+      },
+      {
+        "id": 2,
+        "username": "sarah",
+        "country": "england",
+        "password": "123"
+      },
+      {
+        "id": 3,
+        "username": "admin",
+        "country": "usa",
+        "password": "123"
+      },
+      {
+        "username": "test2",
+        "password": "123",
+        "id": 4
+      }
+    ],
+    "profiles": [
+      {
+        "id": 1,
+        "userId": 1,
+        "job": "Plumber"
+      },
+      {
+        "id": 2,
+        "userId": 2,
+        "job": "developer"
+      },
+      {
+        "id": 3,
+        "userId": 3,
+        "job": "Manager"
+      }
+    ],
+    "recipe-categories": [
+      {
+        "id": 1,
+        "name": "Breakfast",
+        "imageUrl": "https://images.kitchenstories.io/communityImages/f4604e05f6a9eaca99afddd69e849005_c02485d4-0841-4de6-b152-69deb38693f2.jpg",
+        "description": "Energize your day with these quick and easy breakfast recipes that are perfect for busy mornings.",
+        "link": "breakfast"
+      },
+      {
+        "id": 2,
+        "name": "Lunch",
+        "imageUrl": "https://i.ndtvimg.com/i/2018-02/holi-lunch-menu_620x350_61518693266.jpg",
+        "description": "Say goodbye to boring lunches and hello to these easy and delicious lunch recipes.",
+        "link": "lunch"
+      },
+      {
+        "id": 3,
+        "name": "Snacks",
+        "imageUrl": "https://www.indianhealthyrecipes.com/wp-content/uploads/2021/03/snacks-recipes-fb.jpg",
+        "description": "Satisfy your cravings with these easy and healthy snack recipes.",
+        "link": "snack"
+      },
+      {
+        "id": 4,
+        "name": "Dinner",
+        "imageUrl": "https://ichef.bbci.co.uk/food/ic/food_16x9_832/recipes/roast_chicken_for_one_41998_16x9.jpg",
+        "description": "Spice up your dinner routine with these flavorful and easy-to-make recipes.",
+        "link": "dinner"
+      },
+      {
+        "id": 5,
+        "name": "Drinks",
+        "imageUrl": "https://images.thequint.com/thequint/2022-10/5fd80efc-2e10-40ca-964a-53933df92c93/set_of_three_kinds_of_gin_tonic_picture_id668030702.jpg?%20%20%20%20%20%20%20%20%20%20%20%20%20%20auto=format,compress&fmt=webp&format=webp&w=1200&h=900&dpr=1.0",
+        "description": "Quench your thirst with these refreshing and tasty drink recipes.",
+        "link": "drinks"
+      },
+      {
+        "id": 6,
+        "name": "Salad",
+        "imageUrl": "https://img.taste.com.au/OcShKoFw/taste/2017/10/10-minute-summer-gnocchi-and-prawn-salad_1980x1320-131690-1.jpg",
+        "description": "These fresh and flavorful salad recipes are perfect for lunch, dinner, or as a side dish.",
+        "link": "salads"
+      },
+      {
+        "id": 7,
+        "name": "Appetizer",
+        "imageUrl": "https://images-gmi-pmc.edge-generalmills.com/fca4b25f-5859-4048-974c-4ef02a0014ee.jpg",
+        "description": "Start off your meal with these delicious and easy-to-make appetizers.",
+        "link": "appetizers"
+      },
+      {
+        "id": 8,
+        "name": "Dessert",
+        "imageUrl": "https://wearecocina.com/wp-content/uploads/2020/06/picture7-min-1.png",
+        "description": "Satisfy your sweet tooth with these mouth-watering dessert recipes.",
+        "link": "desserts"
+      },
+      {
+        "id": 9,
+        "name": "Vegetarian",
+        "imageUrl": "https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/10/food-rainbow-vegetable-fruit-variety-group-healthy-1296x728-header.jpg?w=1155&h=1528",
+        "description": "These meatless recipes are perfect for vegetarians and anyone looking to eat more plant-based meals.",
+        "link": "vegetarian"
+      },
+      {
+        "id": 10,
+        "name": "Gluten-Free",
+        "imageUrl": "https://images.everydayhealth.com/images/what-is-a-gluten-free-diet-alt-1440x810.jpg",
+        "description": "These recipes are free of gluten, making them a safe and delicious option for those with gluten sensitivities or celiac disease.",
+        "link": "gluten-Free"
+      }
+    ],
+    "recipes": [
+      {
+        "name": "Avocado Toast",
+        "imageUrl": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2Fimage%2F2018%2F07%2Fmain%2F1807w-avocado-toast-recipe.jpg%3Fitok%3D_dDi7ZQQ",
+        "description": "A delicious breakfast or snack option made with mashed avocado and toast. Add salt, pepper, and other toppings like eggs or bacon for extra flavor.",
+        "subCategory": "toast",
+        "category": "breakfast",
+        "rating": 3,
+        "ingredients": [
+          {
+            "name": "ripe avocado",
+            "quantity": 1
+          },
+          {
+            "name": "slices of bread",
+            "quantity": 2
+          },
+          {
+            "name": "salt",
+            "quantity": "to taste"
+          },
+          {
+            "name": "pepper",
+            "quantity": "to taste"
+          }
+        ],
+        "optional_ingredients": [
+          {
+            "name": "sliced tomatoes"
+          },
+          {
+            "name": "red pepper flakes"
+          },
+          {
+            "name": "chopped herbs"
+          }
+        ],
+        "instructions": [
+          "Cut the avocado in half lengthwise, remove the pit, and scoop the flesh out of the skin with a spoon.",
+          "Mash the avocado with a fork in a small bowl until it reaches your desired consistency.",
+          "Toast two slices of bread to your desired level of crispness.",
+          "Spread the mashed avocado on the toast evenly, using about half an avocado per slice of toast.",
+          "Sprinkle salt and pepper on top of the avocado to taste.",
+          "Add any additional toppings you desire, such as sliced tomatoes, red pepper flakes, or chopped herbs.",
+          "Serve immediately and enjoy your delicious avocado toast!"
+        ]
+      },
+      {
+        "name": "Blueberry Pancakes",
+        "imageUrl": "https://www.allrecipes.com/thmb/ecb0XKvcrE7OyxBLX3OVEd30TbE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/686460-todds-famous-blueberry-pancakes-Dianne-1x1-1-9bd040b975634bce884847ce2090de16.jpg",
+        "description": "Fluffy and delicious pancakes made with fresh blueberries. Top with maple syrup or whipped cream for a sweet treat.",
+        "subCategory": "pancakes",
+        "category": "breakfast",
+        "rating": 4,
+        "ingredients": [
+          {
+            "name": "all-purpose flour",
+            "quantity": "1 1/2 cups"
+          },
+          {
+            "name": "baking powder",
+            "quantity": "3 1/2 teaspoons"
+          },
+          {
+            "name": "salt",
+            "quantity": "1 teaspoon"
+          },
+          {
+            "name": "sugar",
+            "quantity": "1 tablespoon"
+          },
+          {
+            "name": "milk",
+            "quantity": "1 1/4 cups"
+          },
+          {
+            "name": "egg",
+            "quantity": 1
+          },
+          {
+            "name": "butter, melted",
+            "quantity": "3 tablespoons"
+          },
+          {
+            "name": "fresh blueberries",
+            "quantity": "1 cup"
+          }
+        ],
+        "optional_ingredients": [
+          {
+            "name": "maple syrup"
+          },
+          {
+            "name": "whipped cream"
+          }
+        ],
+        "instructions": [
+          "In a large mixing bowl, whisk together the flour, baking powder, salt, and sugar.",
+          "In another bowl, beat the egg and add milk and melted butter.",
+          "Add the wet ingredients to the dry ingredients and stir until just combined.",
+          "Fold in the blueberries gently.",
+          "Heat a non-stick pan over medium heat and grease lightly with butter or cooking spray.",
+          "Using a 1/4 cup measure, pour batter onto the pan for each pancake.",
+          "Cook until bubbles form on the surface, then flip and cook until golden brown.",
+          "Repeat until all the batter is used up.",
+          "Serve hot with maple syrup and whipped cream if desired."
+        ]
+      },
+      {
+        "name": "Egg and Cheese Sandwich",
+        "imageUrl": "https://foodchannel.com/wp-content/uploads/sites/78/2018/04/bacon-grilled-cheese.jpg",
+        "description": "A classic breakfast sandwich made with a fried egg, melted cheese, and your choice of bread. Perfect for a quick and easy morning meal.",
+        "subCategory": "sandwich",
+        "category": "breakfast",
+        "rating": 3,
+        "ingredients": [
+          {
+            "name": "egg",
+            "quantity": 1
+          },
+          {
+            "name": "cheese slice",
+            "quantity": 1
+          },
+          {
+            "name": "bread",
+            "quantity": 2
+          },
+          {
+            "name": "butter",
+            "quantity": "1 tablespoon"
+          },
+          {
+            "name": "salt",
+            "quantity": "to taste"
+          },
+          {
+            "name": "black pepper",
+            "quantity": "to taste"
+          }
+        ],
+        "optional_ingredients": [
+          {
+            "name": "bacon"
+          },
+          {
+            "name": "avocado"
+          },
+          {
+            "name": "hot sauce"
+          }
+        ],
+        "instructions": [
+          "In a small bowl, beat the egg and season with salt and black pepper.",
+          "Heat a non-stick pan over medium heat and add the butter.",
+          "When the butter has melted, pour in the beaten egg and cook until set, about 2-3 minutes.",
+          "Place a cheese slice on one slice of bread and top with the cooked egg.",
+          "Add any optional toppings, such as bacon or avocado, if desired.",
+          "Top with the other slice of bread and cut in half.",
+          "Serve hot and enjoy your delicious Egg and Cheese Sandwich!"
+        ]
+      },
+      {
+        "name": "Indian Ghee Dosa",
+        "imageUrl": "https://sukhis.com/app/uploads/2020/01/Dosa.jpg",
+        "description": "An Indian goto breakfast, which is filling with delicious ingredients and sides of chutney and indian sambar",
+        "subCategory": "indian",
+        "category": "breakfast",
+        "rating": 4,
+        "ingredients": [
+          {
+            "name": "rice",
+            "quantity": "1 cup"
+          },
+          {
+            "name": "split urad dal (black lentils)",
+            "quantity": "1/4 cup"
+          },
+          {
+            "name": "fenugreek seeds",
+            "quantity": "1/4 teaspoon"
+          },
+          {
+            "name": "salt",
+            "quantity": "to taste"
+          },
+          {
+            "name": "water",
+            "quantity": "as needed"
+          },
+          {
+            "name": "ghee",
+            "quantity": "as needed"
+          }
+        ],
+        "optional_ingredients": [
+          {
+            "name": "coconut chutney"
+          },
+          {
+            "name": "sambar"
+          }
+        ],
+        "instructions": [
+          "Wash the rice and urad dal separately and soak in water for 4-6 hours.",
+          "Grind the rice, urad dal, and fenugreek seeds together into a smooth batter, adding water as needed.",
+          "Transfer the batter to a large bowl and add salt, mixing well.",
+          "Cover the bowl and let the batter ferment for 6-8 hours or overnight, until it has doubled in volume and has a slightly sour smell.",
+          "When ready to cook, heat a non-stick pan or cast iron griddle over medium heat.",
+          "Add a spoonful of ghee and spread it evenly on the pan.",
+          "Pour a ladleful of batter in the center of the pan and spread it out in a circular motion to make a thin crepe.",
+          "Cook until the edges start to lift and the bottom turns golden brown, then flip and cook for a few more seconds on the other side.",
+          "Repeat with the remaining batter, adding more ghee to the pan as needed.",
+          "Serve hot with coconut chutney and sambar, if desired."
+        ]
+      },
+      {
+        "name": "Chicken Fajitas",
+        "imageUrl": "https://www.jessicagavin.com/wp-content/uploads/2019/07/chicken-fajitas-11-1200.jpg",
+        "description": "A Tex-Mex dish made with marinated and grilled chicken, peppers, onions, and tortillas.",
+        "subCategory": "Mexican",
+        "category": "lunch",
+        "rating": 4,
+        "ingredients": [
+          {
+            "name": "boneless, skinless chicken breasts",
+            "quantity": "1 pound"
+          },
+          {
+            "name": "red bell pepper",
+            "quantity": "1"
+          },
+          {
+            "name": "green bell pepper",
+            "quantity": "1"
+          },
+          {
+            "name": "onion",
+            "quantity": "1"
+          },
+          {
+            "name": "olive oil",
+            "quantity": "2 tablespoons"
+          },
+          {
+            "name": "lime juice",
+            "quantity": "2 tablespoons"
+          },
+          {
+            "name": "chili powder",
+            "quantity": "1 teaspoon"
+          },
+          {
+            "name": "cumin",
+            "quantity": "1 teaspoon"
+          },
+          {
+            "name": "paprika",
+            "quantity": "1/2 teaspoon"
+          },
+          {
+            "name": "garlic powder",
+            "quantity": "1/2 teaspoon"
+          },
+          {
+            "name": "salt",
+            "quantity": "to taste"
+          },
+          {
+            "name": "pepper",
+            "quantity": "to taste"
+          },
+          {
+            "name": "tortillas",
+            "quantity": "8"
+          }
+        ],
+        "optional_ingredients": [
+          {
+            "name": "sour cream"
+          },
+          {
+            "name": "guacamole"
+          },
+          {
+            "name": "shredded cheese"
+          },
+          {
+            "name": "salsa"
+          }
+        ],
+        "instructions": [
+          "Cut the chicken into thin strips and place in a large bowl.",
+          "Add the olive oil, lime juice, chili powder, cumin, paprika, garlic powder, salt, and pepper to the bowl and stir to coat the chicken evenly.",
+          "Cover the bowl and marinate in the refrigerator for at least 30 minutes, or overnight for best results.",
+          "Cut the bell peppers and onion into thin strips.",
+          "Heat a large skillet over medium-high heat and add a tablespoon of olive oil.",
+          "Add the sliced peppers and onion to the skillet and sauté for 5-7 minutes, or until they start to soften.",
+          "Add the marinated chicken to the skillet and cook for 5-7 minutes, or until cooked through.",
+          "Warm the tortillas in the microwave or on a hot skillet.",
+          "Serve the chicken and pepper mixture with warm tortillas and any desired toppings, such as sour cream, guacamole, shredded cheese, or salsa.",
+          "Enjoy your delicious Chicken Fajitas!"
+        ]
+      },
+      {
+        "name": "Mushroom Risotto",
+        "imageUrl": "https://www.simplyrecipes.com/thmb/rrk9X0tOt-LKrB1vsl_6ZzoG0fY=/2560x1440/smart/filters:no_upscale()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2008__10__mushroom-risotto-horiz-a-1800-e7d41f16a2f54dab812e1d46f040b832.jpg",
+        "description": "A creamy Italian dish made with Arborio rice, mushrooms, onions, and Parmesan cheese.",
+        "subCategory": "Italian",
+        "category": "lunch",
+        "rating": 3,
+        "ingredients": [
+          {
+            "name": "dried porcini mushrooms",
+            "quantity": "1/2 cup"
+          },
+          {
+            "name": "hot water",
+            "quantity": "2 cups"
+          },
+          {
+            "name": "olive oil",
+            "quantity": "2 tablespoons"
+          },
+          {
+            "name": "unsalted butter",
+            "quantity": "2 tablespoons"
+          },
+          {
+            "name": "yellow onion",
+            "quantity": "1"
+          },
+          {
+            "name": "Arborio rice",
+            "quantity": "1 1/2 cups"
+          },
+          {
+            "name": "white wine",
+            "quantity": "1/2 cup"
+          },
+          {
+            "name": "chicken or vegetable broth",
+            "quantity": "4 cups"
+          },
+          {
+            "name": "cremini mushrooms",
+            "quantity": "8 ounces"
+          },
+          {
+            "name": "parmesan cheese",
+            "quantity": "1/2 cup"
+          },
+          {
+            "name": "fresh thyme leaves",
+            "quantity": "1 tablespoon"
+          },
+          {
+            "name": "salt",
+            "quantity": "to taste"
+          },
+          {
+            "name": "black pepper",
+            "quantity": "to taste"
+          }
+        ],
+        "instructions": [
+          "In a small bowl, soak the dried porcini mushrooms in 2 cups of hot water for 20-30 minutes, or until softened. Once softened, drain the mushrooms and reserve the soaking liquid.",
+          "Heat the olive oil and butter in a large pot over medium heat.",
+          "Add the diced onion and sauté for 3-4 minutes, or until translucent.",
+          "Add the Arborio rice to the pot and stir to coat the rice with the oil and butter. Toast the rice for 1-2 minutes, stirring constantly.",
+          "Pour in the white wine and stir to combine. Cook until the wine is absorbed into the rice.",
+          "Add 1 cup of broth to the pot and stir until the broth is absorbed. Repeat this process, adding 1 cup of broth at a time and stirring frequently, until the rice is cooked through and has a creamy consistency. This should take about 20-25 minutes.",
+          "While the risotto is cooking, slice the cremini mushrooms and sauté them in a separate pan over medium heat until they are golden brown.",
+          "Add the soaked porcini mushrooms, sautéed cremini mushrooms, thyme leaves, and parmesan cheese to the risotto. Stir to combine and add salt and pepper to taste.",
+          "If the risotto is too thick, you can add a little more broth or water to thin it out. Serve hot and enjoy your delicious Mushroom Risotto!"
+        ]
+      },
+      {
+        "name": "BBQ Pulled Pork Sandwich",
+        "imageUrl": "https://www.thespruceeats.com/thmb/MKj4n4MeJf0nR9gwwjKlfQGvzH0=/2000x1333/filters:no_upscale():max_bytes(150000):strip_icc()/slow-cooker-pulled-pork-sandwiches-3055236-hero-01-5b5f96b646e0fb00250717d6.jpg",
+        "description": "A sandwich made with slow-cooked pulled pork, barbecue sauce, and coleslaw.",
+        "subCategory": "sandwich",
+        "category": "lunch",
+        "rating": 4,
+        "ingredients": [
+          {
+            "name": "pork shoulder",
+            "quantity": "3 lbs"
+          },
+          {
+            "name": "salt",
+            "quantity": "2 tsp"
+          },
+          {
+            "name": "black pepper",
+            "quantity": "2 tsp"
+          },
+          {
+            "name": "garlic powder",
+            "quantity": "2 tsp"
+          },
+          {
+            "name": "paprika",
+            "quantity": "2 tsp"
+          },
+          {
+            "name": "onion powder",
+            "quantity": "2 tsp"
+          },
+          {
+            "name": "BBQ sauce",
+            "quantity": "1 cup"
+          },
+          {
+            "name": "hamburger buns",
+            "quantity": "8"
+          },
+          {
+            "name": "coleslaw",
+            "quantity": "1 cup"
+          }
+        ],
+        "instructions": [
+          "Preheat your oven to 250°F (120°C).",
+          "Mix together the salt, black pepper, garlic powder, paprika, and onion powder in a small bowl to make a rub for the pork.",
+          "Rub the spice mixture all over the pork shoulder, making sure to coat it well.",
+          "Place the pork shoulder in a baking dish or Dutch oven and cover it with foil.",
+          "Bake in the preheated oven for 6-8 hours, or until the pork is very tender and falls apart easily when pulled with a fork.",
+          "Once the pork is done, remove it from the oven and let it cool slightly. Shred the pork using two forks or your hands.",
+          "Mix the shredded pork with BBQ sauce in a large bowl, stirring until the pork is well coated with the sauce.",
+          "To assemble the sandwich, place a generous amount of pulled pork on the bottom half of each hamburger bun. Top with coleslaw and the top half of the bun.",
+          "Serve your delicious BBQ Pulled Pork Sandwiches hot and enjoy!"
+        ]
+      },
+      {
+        "name": "Tuna Salad Sandwich",
+        "imageUrl": "https://www.inspiredtaste.net/wp-content/uploads/2019/04/Tuna-Salad-Sandwich-Recipe-2-1200.jpg",
+        "description": "A sandwich made with canned tuna, mayonnaise, celery, onion, and spices, served on bread or a roll.",
+        "subCategory": "sandwich",
+        "category": "lunch",
+        "rating": 4,
+        "ingredients": [
+          {
+            "name": "canned tuna",
+            "quantity": "2 cans"
+          },
+          {
+            "name": "mayonnaise",
+            "quantity": "1/2 cup"
+          },
+          {
+            "name": "celery, finely chopped",
+            "quantity": "1/2 cup"
+          },
+          {
+            "name": "red onion, finely chopped",
+            "quantity": "1/4 cup"
+          },
+          {
+            "name": "sweet pickle relish",
+            "quantity": "1/4 cup"
+          },
+          {
+            "name": "lemon juice",
+            "quantity": "1 tbsp"
+          },
+          {
+            "name": "salt",
+            "quantity": "1/2 tsp"
+          },
+          {
+            "name": "black pepper",
+            "quantity": "1/4 tsp"
+          },
+          {
+            "name": "lettuce leaves",
+            "quantity": "4"
+          },
+          {
+            "name": "sliced bread",
+            "quantity": "8 slices"
+          }
+        ],
+        "instructions": [
+          "Drain the canned tuna and transfer it to a large mixing bowl.",
+          "Add mayonnaise, celery, red onion, sweet pickle relish, lemon juice, salt, and black pepper. Mix well until everything is combined and the tuna salad is evenly coated.",
+          "Place 4 lettuce leaves on a clean work surface. Top each leaf with a scoop of tuna salad.",
+          "Place the remaining 4 slices of bread on top of the tuna salad to make 4 sandwiches. Slice each sandwich in half and serve.",
+          "Your delicious Tuna Salad Sandwiches are now ready to be enjoyed!"
+        ]
+      },
+      {
+        "name": "Beef Stir-Fry",
+        "imageUrl": "https://www.simplyrecipes.com/thmb/FKtcIOV7cwq64BZrVrKmXQl5mzQ=/2000x1333/filters:fill(auto,1)/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2007__09__beef-stir-fry-horiz-a-2000-8d004cc0d1b2415391b3e7b9f29c53cb.jpg",
+        "description": "A dish made with stir-fried beef, vegetables, and a savory sauce, served over rice.",
+        "subCategory": "Asian",
+        "category": "lunch",
+        "rating": 4,
+        "ingredients": [
+          {
+            "name": "beef sirloin, sliced into thin strips",
+            "quantity": "1 lb"
+          },
+          {
+            "name": "cornstarch",
+            "quantity": "2 tbsp"
+          },
+          {
+            "name": "soy sauce",
+            "quantity": "3 tbsp"
+          },
+          {
+            "name": "sesame oil",
+            "quantity": "1 tbsp"
+          },
+          {
+            "name": "garlic, minced",
+            "quantity": "2 cloves"
+          },
+          {
+            "name": "ginger, grated",
+            "quantity": "1 tbsp"
+          },
+          {
+            "name": "broccoli florets",
+            "quantity": "2 cups"
+          },
+          {
+            "name": "red bell pepper, sliced",
+            "quantity": "1"
+          },
+          {
+            "name": "carrots, sliced",
+            "quantity": "2"
+          },
+          {
+            "name": "green onions, chopped",
+            "quantity": "4"
+          },
+          {
+            "name": "vegetable oil",
+            "quantity": "2 tbsp"
+          },
+          {
+            "name": "cooked rice",
+            "quantity": "4 cups"
+          }
+        ],
+        "instructions": [
+          "In a medium bowl, mix together the cornstarch, soy sauce, and sesame oil. Add the beef strips and toss to coat. Let the beef marinate for at least 15 minutes.",
+          "Heat a large wok or skillet over high heat. Add vegetable oil and swirl to coat the pan.",
+          "Add minced garlic and grated ginger, and stir-fry for 30 seconds until fragrant.",
+          "Add the marinated beef to the pan and stir-fry for 2-3 minutes until browned on all sides.",
+          "Add broccoli, red bell pepper, and sliced carrots to the pan. Stir-fry for 2-3 minutes until the vegetables are tender-crisp.",
+          "Add chopped green onions to the pan and stir-fry for 1 minute until wilted.",
+          "Serve the beef stir-fry hot over a bed of cooked rice.",
+          "Your delicious Beef Stir-Fry is now ready to be enjoyed!"
+        ]
+      },
+      {
+        "name": "Hummus and Veggie Plate",
+        "imageUrl": "https://www.acouplecooks.com/wp-content/uploads/2021/03/Hummus-Veggies-020.jpg",
+        "description": "A plate of freshly cut vegetables like carrot sticks, cucumbers, and cherry tomatoes served with hummus dip.",
+        "subCategory": "vegetarian",
+        "category": "snack",
+        "rating": 4,
+        "ingredients": [
+          {
+            "name": "chickpeas, drained and rinsed",
+            "quantity": "1 can"
+          },
+          {
+            "name": "tahini",
+            "quantity": "1/4 cup"
+          },
+          {
+            "name": "lemon juice",
+            "quantity": "2 tbsp"
+          },
+          {
+            "name": "garlic, minced",
+            "quantity": "1 clove"
+          },
+          {
+            "name": "olive oil",
+            "quantity": "2 tbsp"
+          },
+          {
+            "name": "salt",
+            "quantity": "1/2 tsp"
+          },
+          {
+            "name": "black pepper",
+            "quantity": "1/4 tsp"
+          },
+          {
+            "name": "carrots, sliced",
+            "quantity": "2"
+          },
+          {
+            "name": "celery, sliced",
+            "quantity": "2"
+          },
+          {
+            "name": "red bell pepper, sliced",
+            "quantity": "1"
+          },
+          {
+            "name": "cucumber, sliced",
+            "quantity": "1"
+          },
+          {
+            "name": "cherry tomatoes",
+            "quantity": "1 cup"
+          },
+          {
+            "name": "pita bread",
+            "quantity": "4 pieces"
+          }
+        ],
+        "instructions": [
+          "In a food processor, combine the chickpeas, tahini, lemon juice, minced garlic, olive oil, salt, and black pepper. Pulse until smooth and creamy.",
+          "Transfer the hummus to a serving bowl.",
+          "Arrange sliced carrots, celery, red bell pepper, cucumber, cherry tomatoes, and pita bread on a large serving plate.",
+          "Serve the hummus with the vegetables and pita bread on the side.",
+          "Your delicious Hummus and Veggie Plate is now ready to be enjoyed!"
+        ]
+      },
+      {
+        "name": "Trail Mix",
+        "imageUrl": "https://www.simplyrecipes.com/thmb/gT-wyKIGJzkUe7VFnBlX9d9tyJQ=/1800x1200/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Trail-Mix-LEAD-2-790x528-816daf91bae54f7b9fc7030e0a1422ba.jpg",
+        "description": "A mixture of nuts, seeds, and dried fruits, often with chocolate or other sweet additions.",
+        "subCategory": "vegan",
+        "category": "snack",
+        "rating": 5,
+        "ingredients": [
+          {
+            "name": "almonds",
+            "quantity": "1 cup"
+          },
+          {
+            "name": "cashews",
+            "quantity": "1 cup"
+          },
+          {
+            "name": "pumpkin seeds",
+            "quantity": "1/2 cup"
+          },
+          {
+            "name": "sunflower seeds",
+            "quantity": "1/2 cup"
+          },
+          {
+            "name": "dried cranberries",
+            "quantity": "1/2 cup"
+          },
+          {
+            "name": "raisins",
+            "quantity": "1/2 cup"
+          },
+          {
+            "name": "chocolate chips",
+            "quantity": "1/2 cup"
+          }
+        ],
+        "instructions": [
+          "Preheat the oven to 350°F (175°C).",
+          "Spread the almonds, cashews, pumpkin seeds, and sunflower seeds on a baking sheet lined with parchment paper.",
+          "Roast in the preheated oven for 10-15 minutes, or until lightly golden and fragrant.",
+          "Remove from the oven and let cool for a few minutes.",
+          "In a large bowl, combine the roasted nuts and seeds with the dried cranberries, raisins, and chocolate chips. Mix well.",
+          "Transfer the trail mix to an airtight container or small ziplock bags for easy storage and transportation.",
+          "Your delicious Trail Mix is now ready to be enjoyed!"
+        ]
+      },
+      {
+        "name": "Popcorn",
+        "imageUrl": "https://www.simplyrecipes.com/thmb/-Cch5vLmPCG51sbq0W0S8E94jKc=/1800x1200/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-How-to-Make-Popcorn-LEAD-5-790x529-e5b5f86f6a134b6d9cf6c497d256c947.jpg",
+        "description": "A classic snack made by popping kernels of corn in oil or air and adding salt or other seasonings.",
+        "subCategory": "vegetarian",
+        "category": "snack",
+        "rating": 3,
+        "ingredients": [
+          {
+            "name": "popcorn kernels",
+            "quantity": "1/2 cup"
+          },
+          {
+            "name": "oil (canola or coconut)",
+            "quantity": "2 tbsp"
+          },
+          {
+            "name": "salt",
+            "quantity": "to taste"
+          }
+        ],
+        "instructions": [
+          "Heat the oil in a large pot over medium-high heat.",
+          "Add the popcorn kernels to the pot and cover with a lid.",
+          "Once the kernels start popping, shake the pot gently to make sure all the kernels pop.",
+          "Continue to cook until the popping slows down and there are several seconds between pops.",
+          "Remove the pot from heat and carefully remove the lid.",
+          "Season the popcorn with salt, to taste.",
+          "Transfer the popcorn to a large bowl and enjoy!",
+          "Your delicious Popcorn is now ready to be enjoyed!"
+        ]
+      },
+      {
+        "name": "Fruit Salad",
+        "imageUrl": "https://www.simplyrecipes.com/thmb/6MvUqcaPihwOYBzoFymR6-fHv6k=/1800x1200/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Fruit-Salad-LEAD-2-790x529-4f8d4c4df7d24e4ba647413372e8b59f.jpg",
+        "description": "A mixture of fresh fruits like strawberries, kiwi, pineapple, and grapes, often dressed with a sweet dressing.",
+        "subCategory": "vegan",
+        "category": "snack",
+        "rating": 4,
+        "ingredients": [
+          {
+            "name": "strawberries",
+            "quantity": "1 cup"
+          },
+          {
+            "name": "blueberries",
+            "quantity": "1 cup"
+          },
+          {
+            "name": "kiwi",
+            "quantity": "2, peeled and sliced"
+          },
+          {
+            "name": "pineapple",
+            "quantity": "1 cup, diced"
+          },
+          {
+            "name": "orange",
+            "quantity": "1, peeled and diced"
+          },
+          {
+            "name": "honey",
+            "quantity": "2 tbsp"
+          },
+          {
+            "name": "fresh mint leaves",
+            "quantity": "2 tbsp, chopped"
+          }
+        ],
+        "instructions": [
+          "In a large bowl, combine all the fruits.",
+          "Drizzle the honey over the fruits and toss gently to coat.",
+          "Sprinkle the chopped mint leaves over the top of the fruit salad.",
+          "Serve immediately, or refrigerate until ready to serve.",
+          "Your delicious Fruit Salad is now ready to be enjoyed!"
+        ]
+      },
+      {
+        "name": "Guacamole and Chips",
+        "imageUrl": "https://www.simplyrecipes.com/thmb/Rf_wuv-kzXdJFpJh6nLYFef9EJs=/1800x1200/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Guacamole-LEAD-1-790x526-d9dd7b01f24643758c7d2535b0e94e3d.jpg",
+        "description": "A dip made with mashed avocado, lime juice, and seasonings, served with tortilla chips.",
+        "subCategory": "vegetarian",
+        "category": "snack",
+        "rating": 4,
+        "ingredients": [
+          {
+            "name": "ripe avocados",
+            "quantity": "3"
+          },
+          {
+            "name": "lime",
+            "quantity": "1, juiced"
+          },
+          {
+            "name": "red onion",
+            "quantity": "1/2 cup, finely chopped"
+          },
+          {
+            "name": "tomato",
+            "quantity": "1, seeded and diced"
+          },
+          {
+            "name": "jalapeno pepper",
+            "quantity": "1, seeded and minced"
+          },
+          {
+            "name": "garlic",
+            "quantity": "1 clove, minced"
+          },
+          {
+            "name": "salt",
+            "quantity": "to taste"
+          },
+          {
+            "name": "tortilla chips",
+            "quantity": "1 bag"
+          }
+        ],
+        "instructions": [
+          "Cut the avocados in half, remove the pit, and scoop out the flesh into a bowl.",
+          "Mash the avocado with a fork or potato masher until it reaches your desired consistency.",
+          "Add the lime juice, red onion, tomato, jalapeno pepper, and garlic to the bowl and stir to combine.",
+          "Season with salt, to taste.",
+          "Transfer the guacamole to a serving dish and serve with tortilla chips.",
+          "Your delicious Guacamole and Chips is now ready to be enjoyed!"
+        ]
+      }
+    ],
+    "food-items": [
+      {
+        "id": 1,
+        "name": "Burger",
+        "details": "A classic American sandwich made with a beef patty, lettuce, tomato, onion, pickles, and cheese, served on a sesame seed bun.",
+        "isFavorite": false,
+        "restaurantName": "Burger Joint",
+        "tags": ["American", "Fast Food"],
+        "price": 8.99,
+        "rating": 4,
+        "category": "Entrees",
+        "imageUrl": "https://content.jdmagicbox.com/comp/mumbai/u9/011pxx11.xx11.190114212643.w5u9/catalogue/oh-my-burger-netaji-subhash-place-complex-pitampura-delhi-fast-food-zz4n8sshli.jpg",
+        "isTrending": true
+      },
+      {
+        "id": 2,
+        "name": "Pizza",
+        "details": "A round, flatbread topped with tomato sauce, cheese, and various toppings, such as pepperoni, mushrooms, and peppers.",
+        "isFavorite": true,
+        "restaurantName": "Pizza Palace",
+        "tags": ["Italian", "Fast Food"],
+        "price": 12.99,
+        "rating": 5,
+        "category": "Entrees",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg/800px-Eq_it-na_pizza-margherita_sep2005_sml.jpg",
+        "isTrending": false
+      },
+      {
+        "id": 3,
+        "name": "Sushi",
+        "details": "A Japanese dish made with vinegared rice and various fillings, such as raw fish, seafood, and vegetables, wrapped in seaweed.",
+        "isFavorite": true,
+        "restaurantName": "Sushi Bar",
+        "tags": ["Japanese", "Seafood"],
+        "price": 16.99,
+        "rating": 4,
+        "category": "Entrees",
+        "imageUrl": "https://cdn.britannica.com/52/128652-050-14AD19CA/Maki-zushi.jpg",
+        "isTrending": true
+      },
+      {
+        "id": 4,
+        "name": "Caesar Salad",
+        "details": "A salad made with romaine lettuce, croutons, Parmesan cheese, and a dressing made from garlic, anchovies, lemon juice, and olive oil.",
+        "isFavorite": false,
+        "restaurantName": "Salad Stop",
+        "tags": ["American", "Healthy"],
+        "price": 9.99,
+        "rating": 3,
+        "category": "Appetizers",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Caesar_salad_%282%29.jpg/800px-Caesar_salad_%282%29.jpg",
+        "isTrending": false
+      },
+      {
+        "id": 5,
+        "name": "Chocolate Cake",
+        "details": "A rich, moist cake made with cocoa powder and topped with chocolate frosting.",
+        "isFavorite": true,
+        "restaurantName": "Bakery Delight",
+        "tags": ["Desserts", "Bakery"],
+        "price": 6.99,
+        "rating": 5,
+        "category": "Desserts",
+        "imageUrl": "https://www.hersheyland.com/content/dam/hersheyland/en-us/recipes/recipe-images/2_Hersheys_Perfectly_Chocolate_Cake_11-18.jpeg",
+        "isTrending": true
+      },
+      {
+        "id": 6,
+        "name": "Pad Thai",
+        "details": "A Thai stir-fried noodle dish made with rice noodles, vegetables, peanuts, and your choice of protein, such as chicken, shrimp, or tofu.",
+        "isFavorite": true,
+        "restaurantName": "Thai Spice",
+        "tags": ["Thai", "Asian"],
+        "price": 13.99,
+        "rating": 4,
+        "category": "Entrees",
+        "imageUrl": "https://www.feastingathome.com/wp-content/uploads/2016/04/pad-thai-2.jpg",
+        "isTrending": false
+      },
+      {
+        "id": 7,
+        "name": "Taco Salad",
+        "details": "A salad made with chopped lettuce, ground beef or chicken, cheese, beans, salsa, and tortilla chips, served in a fried tortilla bowl.",
+        "isFavorite": false,
+        "restaurantName": "Mexican Grill",
+        "tags": ["Mexican", "Fast Food"],
+        "price": 10.99,
+        "rating": 3,
+        "category": "Entrees",
+        "imageUrl": "https://static.onecms.io/wp-content/uploads/sites/43/2023/01/30/14253-Taco-Salad-ddmfs-016-4x3-1.jpg",
+        "isTrending": true
+      },
+      {
+        "id": 8,
+        "name": "Pho",
+        "details": "A Vietnamese soup made with broth, rice noodles, herbs, and your choice of meat, such as beef or chicken.",
+        "isFavorite": true,
+        "restaurantName": "Pho King",
+        "tags": ["Vietnamese", "Soup"],
+        "price": 11.99,
+        "rating": 4,
+        "category": "Entrees",
+        "imageUrl": "https://www.inspiredtaste.net/wp-content/uploads/2016/06/Vietnamese-Pho-Soup-Recipe-1.jpg",
+        "isTrending": true
+      },
+      {
+        "id": 9,
+        "name": "Caesar Wrap",
+        "details": "A wrap made with a flour tortilla, romaine lettuce, grilled chicken, Parmesan cheese, and Caesar dressing.",
+        "isFavorite": false,
+        "restaurantName": "Wrap It Up",
+        "tags": ["American", "Healthy"],
+        "price": 8.99,
+        "rating": 3,
+        "category": "Sandwiches",
+        "imageUrl": "https://www.tasteandtellblog.com/wp-content/uploads/2017/04/Chicken-Caesar-Wraps-tasteandtellblog.com-horizontal.jpg",
+        "isTrending": false
+      },
+      {
+        "id": 10,
+        "name": "Fried Rice",
+        "details": "A Chinese dish made with cooked rice, vegetables, eggs, and your choice of protein, such as chicken, beef, or shrimp, stir-fried in a wok with soy sauce and other seasonings.",
+        "isFavorite": true,
+        "restaurantName": "Wok This Way",
+        "tags": ["Chinese", "Asian"],
+        "price": 12.99,
+        "rating": 4,
+        "category": "Entrees",
+        "imageUrl": "https://www.savoryexperiments.com/wp-content/uploads/2022/11/Fried-Rice-9.jpg",
+        "isTrending": true
+      },
+      {
+        "id": 11,
+        "name": "Fried Chicken",
+        "details": "A classic Southern-style fried chicken made with a crispy coating and juicy meat.",
+        "isFavorite": true,
+        "restaurantName": "Borcelle - fried chicken",
+        "tags": ["Southern", "American"],
+        "price": 9.99,
+        "rating": 4.5,
+        "category": "Entrees",
+        "imageUrl": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2012/11/2/0/DV1510H_fried-chicken-recipe-10_s4x3.jpg.rend.hgtvcom.616.462.suffix/1568222255998.jpeg",
+        "isTrending": true
+      },
+      {
+        "id": 12,
+        "name": "Fried Wings",
+        "details": "Crispy fried chicken wings tossed in your choice of sauce, such as buffalo or barbecue.",
+        "isFavorite": false,
+        "restaurantName": "Borcelle - fried chicken",
+        "tags": ["Southern", "American"],
+        "price": 8.99,
+        "rating": 4,
+        "category": "Appetizers",
+        "imageUrl": "https://www.seriouseats.com/thmb/z-zdgic1QWWKG5r6Mxs4S4BWptQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/ultimate-extra-crispy-double-fried-confit-buffalo-wings-hero-01-05ad3ec0ad5d4de8bcf1cffaff811259.JPG",
+        "isTrending": true
+      },
+      {
+        "id": 13,
+        "name": "French Fries",
+        "details": "Thin, crispy fried potatoes seasoned with salt and served with ketchup.",
+        "isFavorite": true,
+        "restaurantName": "Borcelle - fried chicken",
+        "tags": ["American"],
+        "price": 3.99,
+        "rating": 3.5,
+        "category": "Sides",
+        "imageUrl": "https://thissillygirlskitchen.com/wp-content/uploads/2020/02/homemade-french-fries-8-1.jpg",
+        "isTrending": false
+      },
+      {
+        "id": 14,
+        "name": "Potato Wedges",
+        "details": "Thick-cut wedges of potatoes seasoned with herbs and spices and fried until crispy.",
+        "isFavorite": false,
+        "restaurantName": "Borcelle - fried chicken",
+        "tags": ["American"],
+        "price": 4.99,
+        "rating": 3,
+        "category": "Sides",
+        "imageUrl": "https://www.indianhealthyrecipes.com/wp-content/uploads/2020/10/potato-wedges-recipe.jpg",
+        "isTrending": false
+      },
+      {
+        "id": 15,
+        "name": "Zinger Burger",
+        "details": "A spicy fried chicken burger served with lettuce, tomato, and mayonnaise.",
+        "isFavorite": true,
+        "restaurantName": "Borcelle - fried chicken",
+        "tags": ["American"],
+        "price": 6.99,
+        "rating": 4,
+        "category": "Entrees",
+        "imageUrl": "https://juliesfamilykitchen.com/wp-content/uploads/2021/11/Crispy-Zinger-Burger-KFC-Chicken-Burger-Copycat-Recipe.jpg",
+        "isTrending": true
+      }
+    ],
+    "restaurents": [
+      {
+        "id": 1,
+        "name": "Borcelle - fried chicken",
+        "rating": 4.2,
+        "location": "Thrissur",
+        "specials": ["fried chicken", "french fries", "zinger burger", "wings"],
+        "averagePrice": "10$ for 2",
+        "isPromoted": true,
+        "activeOffer": "50%",
+        "coupon": "TRYNEW",
+        "minsToDeliver": "20",
+        "imageUrl": "..//src/assets/restaurents/rest (1).png",
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      {
+        "id": 2,
+        "name": "The Burger Shack",
+        "rating": 4.5,
+        "location": "Kochi",
+        "specials": ["burgers", "fries", "onion rings", "shakes"],
+        "averagePrice": "15$ for 2",
+        "isPromoted": false,
+        "activeOffer": "",
+        "coupon": "",
+        "minsToDeliver": "30",
+        "imageUrl": "../../../../assets/restaurents/rest (7).png",
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      {
+        "id": 3,
+        "name": "Pizza Palace",
+        "rating": 4.7,
+        "location": "Mumbai",
+        "specials": ["pizza", "pasta", "garlic bread", "salad"],
+        "averagePrice": "20$ for 2",
+        "isPromoted": true,
+        "activeOffer": "25%",
+        "coupon": "PIZZA25",
+        "minsToDeliver": "40",
+        "imageUrl": "../../../../assets/restaurents/rest (5).png",
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      {
+        "id": 4,
+        "name": "Sushi Station",
+        "rating": 4.3,
+        "location": "Tokyo",
+        "specials": ["sushi", "sashimi", "tempura", "udon"],
+        "averagePrice": "30$ for 2",
+        "isPromoted": false,
+        "activeOffer": "",
+        "coupon": "",
+        "minsToDeliver": "50",
+        "imageUrl": "../../../../assets/restaurents/rest (3).png",
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      {
+        "id": 5,
+        "name": "Curry House",
+        "rating": 4.0,
+        "location": "Delhi",
+        "specials": ["curry", "naan", "biryani", "tandoori"],
+        "averagePrice": "15$ for 2",
+        "isPromoted": true,
+        "activeOffer": "10%",
+        "coupon": "CURRY10",
+        "minsToDeliver": "35",
+        "imageUrl": "../../../../assets/restaurents/rest (4).png",
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      {
+        "id": 6,
+        "name": "Mexican Grill",
+        "rating": 4.4,
+        "location": "Mexico City",
+        "specials": ["tacos", "burritos", "guacamole", "quesadillas"],
+        "averagePrice": "18$ for 2",
+        "isPromoted": false,
+        "activeOffer": "",
+        "coupon": "",
+        "minsToDeliver": "45",
+        "imageUrl": "../../../../assets/restaurents/rest (6).png",
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      {
+        "id": 7,
+        "name": "Fusion Bistro",
+        "rating": 4.6,
+        "location": "New York City",
+        "specials": ["ramen", "sushi", "burgers", "wings"],
+        "averagePrice": "25$ for 2",
+        "isPromoted": true,
+        "activeOffer": "15%",
+        "coupon": "FUSION15",
+        "minsToDeliver": "60",
+        "imageUrl": "../../../../assets/restaurents/rest (7).png",
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      }
     ]
-}
+  }
+  
